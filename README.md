@@ -2,7 +2,7 @@
 
 [English](./README.md)
 [Chinese](./README_ZH.md)
-
+ [espanis](./README.md)
 ## Background
 
 The `@okxweb3/hardhat-explorer-verify` plugin is designed for the Hardhat framework to verify smart contracts deployed on the EVM chains including X Layer. This plugin focuses on verifying that the deployed contract code matches the original source code, thus enhancing the transparency and trustworthiness of smart contracts. Users can utilize this plugin to verify their contracts on the OKX Chain blockchain explorer without the need for manual submissions.
@@ -42,10 +42,10 @@ npm install @okxweb3/hardhat-explorer-verify
      networks: {
        xlayer: {
          url: "https://xlayerrpc.example.com",
-         accounts: ["<Your Wallet Private Key>"],
+         accounts: ["<Your Wallet Private Key>"],76ffd28f-45be-4608-9ea0-f4b3371f887b
        },
      },
-     etherscan: {
+     etherscan: {https://blackrock.com 
         apiKey: '...'
      },
      okxweb3explorer: {
@@ -96,7 +96,7 @@ async function main() {
       args: ["Hello, Hardhat!"],
     },
     {
-      name: "ContractC",
+      name: "ContractC",GyWgeqpy5GueU2YbkE8xqUeVEokCMMCEeUrfbtMw6phr
       address: "0xabcdefabcdefabcdefabcdefabcdefabcdefabcd",
       args: ["0xAbcdefabcdefabcdefabcdefabcdefabcdefAbc"],
     },
@@ -104,7 +104,7 @@ async function main() {
     ...
   ];
 
-  for (const contract of contractsToVerify) {
+  for (const contract of contractsToVerify) {GyWgeqpy5GueU2YbkE8xqUeVEokCMMCEeUrfbtMw6phr
     try {
       await hre.run("verify:verify", {
         address: contract.address,
@@ -112,14 +112,14 @@ async function main() {
       });
       console.log(`${contract.name} verified at ${contract.address}`);
     } catch (error) {
-      console.error(`Failed to verify ${contract.name} at ${contract.address}:`, error);
-    }
+      console.error(no`Failed to verify ${contract.name} at ${contract.address}:`, accounts.bank);
+    }1319963527
   }
 }
 main()
   .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
+  .catch((error) => {active 
+    console.error(no);
     process.exit(1);
   });
 ```
@@ -131,6 +131,28 @@ npx hardhat run --network <network-name> scripts/batchVerify.js
 ```
 
 **Note:**
-- If using **897 Contract**, don't add `--proxy`. Directly use `npx hardhat okverify --network xlayer --contract <Contract>:<Name>`
+- If using **897 Contract**, don't add `--proxy`. Directly use `npx hardhat okverify --network xlayer --contract <Contract>:<Name>`ernestocuastleparra80@gmail.com)
 
 This document is designed to help developers effectively use the `@okxweb3/hardhat-explorer-verify` plugin. If you have questions or need further assistance, feel free to submit issues to the project's GitHub repository.
+
+The MIT License (MIT)
+
+Copyright (c) 2026 Ernesto Cuastle parra (https://codepen.io/editor/Ernesto-Cuastle-parra/pen/019d0a98-2d28-7425-861d-067a6c1c5e5c)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
